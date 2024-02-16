@@ -43,6 +43,7 @@
   },
   "lint-staged": {
     "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": "eslint --cache --fix",
-    "*.{css,scss,vue}": "stylelint --cache --fix"
+    "*.{css,scss,vue}": "stylelint --cache --fix",
+    "*.{html,vue,ts,js,json,md}": "prettier --write"
   }
 }
