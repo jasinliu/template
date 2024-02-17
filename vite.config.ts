@@ -11,4 +11,13 @@ export default defineConfig({
       '@': path.resolve('./src'), // 相对路径别名配置，使用 @ 代替 src
     },
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
 });

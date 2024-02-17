@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "types": ["element-plus/global"],
+    "types": ["node", "vite/client", "element-plus/global"],
 
     /* alias */
     "baseUrl": "./", // 解析非相对模块的基地址，默认是当前目录
@@ -29,6 +29,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "types/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
